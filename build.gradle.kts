@@ -27,7 +27,7 @@ dependencies {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}
 
-	implementation("org.jetbrains.exposed:exposed-spring-boot-starter:0.16.1")
+	implementation("org.jetbrains.exposed:exposed-spring-boot-starter:0.20.2")
 }
 
 tasks.withType<Test> {
