@@ -29,12 +29,7 @@ dependencies {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}
 
-	implementation("org.jetbrains.exposed", "exposed-core", "0.20.3")
-	implementation("org.jetbrains.exposed", "exposed-dao", "0.20.3")
-	implementation("org.jetbrains.exposed", "exposed-jdbc", "0.20.3")
-	implementation("org.jetbrains.exposed", "spring-transaction", "0.11.2")
-
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.jetbrains.exposed:exposed-spring-boot-starter:0.20.3")
 	implementation("org.flywaydb:flyway-core:6.2.1")
 }
 
