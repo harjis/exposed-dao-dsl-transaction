@@ -1,6 +1,6 @@
 package com.example.exposeddaodsltransaction.app.tables
 
-import org.jetbrains.exposed.dao.UUIDTable
+import org.jetbrains.exposed.dao.id.UUIDTable
 
 object Comments : UUIDTable() {
     val body = varchar("body", 255)

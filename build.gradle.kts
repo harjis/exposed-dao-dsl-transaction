@@ -5,7 +5,9 @@ plugins {
 	id("io.spring.dependency-management") version "1.0.8.RELEASE"
 	kotlin("jvm") version "1.3.50"
 	kotlin("plugin.spring") version "1.3.50"
+	id("org.flywaydb.flyway") version "6.2.1"
 }
+
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
@@ -27,7 +29,13 @@ dependencies {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}
 
-	implementation("org.jetbrains.exposed:exposed-spring-boot-starter:0.20.2")
+	implementation("org.jetbrains.exposed", "exposed-core", "0.20.3")
+	implementation("org.jetbrains.exposed", "exposed-dao", "0.20.3")
+	implementation("org.jetbrains.exposed", "exposed-jdbc", "0.20.3")
+	implementation("org.jetbrains.exposed", "spring-transaction", "0.11.2")
+
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.flywaydb:flyway-core:6.2.1")
 }
 
 tasks.withType<Test> {
