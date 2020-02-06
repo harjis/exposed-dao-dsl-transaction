@@ -34,7 +34,7 @@ dependencies {
 	implementation("org.jetbrains.exposed", "exposed-jdbc", "0.20.3")
 	implementation("org.jetbrains.exposed", "spring-transaction", "0.11.2")
 
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
 	implementation("org.flywaydb:flyway-core:6.2.1")
 }
 
